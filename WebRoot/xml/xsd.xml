@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+<!-- urlset，urlset用来标记整个文档的开头，最少出现1次 最多出现1次 -->
+	<url>
+	<!-- url，url标记每条信息的开始和结束，最少出现0次 最多出现50000次 -->
+		<loc>http://wx.swfit.com.cn/</loc>
+		<!-- loc，该条数据的存放地址，最少出现1次 最多出现1次，类型为URL地址，最小长度1个字符	最大长度256个字符	必须符合正则表达式(http://)(.+) -->
+		<lastmod>2015-01-01</lastmod>
+		<!-- lastmod，指该条数据的最新一次更新时间，最少出现0次 最多出现1次，类型为日期或日期时间，格式为YYYY-MM-DD的日期或者格式为YYYY-MM-DDThh:mm:ss的日期时间（请注意日期与时间之间以“T”分隔） -->
+		<changefreq>always</changefreq>
+		<!-- changefreq，指该条数据的更新频率，最少出现0次 最多出现1次，类型为字符串，有效值为：always、hourly、daily、weekly、monthly、yearly、never -->
+		<priority>1.0</priority>
+		<!-- priority，用来指定此链接相对于其他链接的优先权比值，此值定于0.0-1.0之间，最少出现0次 最多出现1次，类型为小数，最小值为（包含）0.0	最大值为（包含）1.0 -->
+		<data>
+		<!-- data，，最少出现1次 最多出现1次 -->
+			<display>
+			<!-- display，，最少出现1次 最多出现1次 -->
+				<coupon>
+				<!-- coupon: 代金券，代金券，最少出现1次 最多出现1次 -->
+					<couponBrandName>小肥羊</couponBrandName>
+					<!-- couponBrandName: 商家名称，商家名称，最少出现1次 最多出现1次，类型为字符串，最小长度1个字符 -->
+					<couponBrandAlias datatype="array">
+					<!-- couponBrandAlias: 商家别名，商家别名，最少出现0次 最多出现1次 -->
+					<!-- 属性datatype，，可选，类型为字符串，有效值为：array -->
+						<item>小肥羊火锅</item>
+						<!-- item: 别名，商家别名，最少出现1次 最多出现5次，类型为字符串，最小长度1个字符 -->
+					</couponBrandAlias>
+					<description>内蒙古小肥羊餐饮连锁有限公司是一家以自然人做发起人的股份制企业，公司于1999年8月诞生在草原鹿城——包头市，以小肥羊特色火锅连锁为主业。</description>
+					<!-- description: 商家描述，商家描述，最少出现0次 最多出现1次，类型为字符串，最小长度1个字符 -->
+					<detailUrl><![CDATA[http://baike.baidu.com/view/345605.htm?fr=aladdin]]></detailUrl>
+					<!-- detailUrl: 商家介绍url，商家介绍链接，最少出现0次 最多出现1次，类型为字符串，最小长度1个字符 -->
+					<praiseDegree>99.99</praiseDegree>
+					<!-- praiseDegree: 好评度，商家好评度，前端展现百分比样式，最少出现0次 最多出现1次，类型为小数 -->
+					<couponList>
+					<!-- couponList: 代金券列表，代金券列表，最少出现1次 最多出现1次 -->
+						<couponName>小肥羊代金券</couponName>
+						<!-- couponName: 代金券名称，代金券名称，最少出现1次 最多出现1次，类型为字符串，最小长度1个字符 -->
+						<couponId>37</couponId>
+						<!-- couponId: 代金券id，代金券id，给商品库对应id即可，最少出现1次 最多出现1次，类型为字符串，最小长度1个字符 -->
+						<couponIntroduction>一张划算的代金券</couponIntroduction>
+						<!-- couponIntroduction: 代金券简介，代金券简介，最少出现1次 最多出现1次，类型为字符串，最小长度1个字符 -->
+						<couponProvince datatype="array">
+						<!-- couponProvince: 代金券所属省，代金券所属省，最少出现0次 最多出现1次 -->
+						<!-- 属性datatype，，可选，类型为字符串，有效值为：array -->
+							<item>北京</item>
+							<!-- item: 地区，代金券所属地区，最少出现0次 不限制最多出现次数，类型为字符串，最小长度1个字符 -->
+						</couponProvince>
+						<couponCity datatype="array">
+						<!-- couponCity: 市级名称，代金券所属市，最少出现0次 最多出现1次 -->
+						<!-- 属性datatype，，可选，类型为字符串，有效值为：array -->
+							<item>北京市</item>
+							<!-- item: 城市列表，城市列表，最少出现0次 不限制最多出现次数，类型为字符串 -->
+						</couponCity>
+						<couponDistrict datatype="array">
+						<!-- couponDistrict: 县、地区列表，，最少出现0次 最多出现1次 -->
+						<!-- 属性datatype，，可选，类型为字符串，有效值为：array -->
+							<item>海淀区</item>
+							<!-- item: 县、地区列表，县、地区列表，最少出现0次 不限制最多出现次数，类型为字符串 -->
+						</couponDistrict>
+						<countrySupport>1</countrySupport>
+						<!-- countrySupport: 是否支持全国，是否支持全国，最少出现1次 最多出现1次，类型为整数，最小值为（包含）0	最大值为（包含）1 -->
+						<couponImage>https://www.baidu.com/img/bdlogo.png</couponImage>
+						<!-- couponImage: 代金券图片链接，代金券图片链接，最少出现1次 最多出现1次，类型为字符串 -->
+						<price>80.5</price>
+						<!-- price: 代金券价格，代金券购买价格，最少出现1次 最多出现1次，类型为小数，最小值为（包含）0 -->
+						<normalPrice>100</normalPrice>
+						<!-- normalPrice: 代金券价值，代金券票面价值，最少出现1次 最多出现1次，类型为小数，最小值为（包含）0 -->
+						<couponNumber>100</couponNumber>
+						<!-- couponNumber: 代金券数量，代金券数量，没有时为-1，最少出现0次 最多出现1次，类型为整数，最小值为（包含）-1 -->
+						<couponType>7</couponType>
+						<!-- couponType: 代金券类型，代金券类型id，用于显示为结果票名称，参考：0.普通类 1.儿童专用 2.百度员工专用 3.老人专用 4.学生专用 5.女生专用，最少出现0次 最多出现1次，类型为整数，有效值为：0、1、2、3、4、5、6、7 ，最少出现1次 最多出现1次，类型为整数，最小值为（包含）0 -->
+						<bookUrl><![CDATA[http://baike.baidu.com/view/345605.htm?fr=aladdin]]></bookUrl>
+						<!-- bookUrl: 详情链接，查看代金券详情链接，最少出现1次 最多出现1次，类型为字符串，最小长度1个字符 -->
+						<validTime>2014年11月27日至2015年1月27日</validTime>
+						<!-- validTime: 代金券有效期，代金券有效期，最少出现0次 最多出现1次，类型为字符串，最小长度1个字符 -->
+						<useTime>10:00-22:00（周末10:00-23:00）</useTime>
+						<!-- useTime: 使用时间，代金券使用时间，最少出现0次 最多出现1次，类型为字符串 -->
+						<reservationDetail>1</reservationDetail>
+						<!-- reservationDetail: 预约详情，预约详情，是否需要预约（0：免预约；1：需要预约），最少出现1次 最多出现1次，类型为整数，最小值为（包含）0	最大值为（包含）1 -->
+						<reservationTime>提前24小时预约</reservationTime>
+						<!-- reservationTime: 提前预约时间，提前预约时间，最少出现0次 最多出现1次，类型为字符串 -->
+						<serviceIntroduction datatype="array">
+						<!-- serviceIntroduction: 服务说明，，最少出现0次 最多出现1次 -->
+						<!-- 属性datatype，，可选，类型为字符串，有效值为：array -->
+							<item>不限时段；过期自动退款</item>
+							<!-- item: 服务说明，服务说明，最少出现1次 最多出现5次，类型为字符串 -->
+						</serviceIntroduction>
+					</couponList>
+					<isDelete>0</isDelete>
+					<!-- isDelete: 是否屏蔽该条结果，是否屏蔽该条结果，最少出现0次 最多出现1次，类型为整数，最小值为（包含）0	最大值为（包含）1 -->
+				</coupon>
+				<category>生活服务</category>
+				<!-- category: 类别，类别，最少出现1次 最多出现1次，类型为字符串 -->
+				<subcate>代金券</subcate>
+				<!-- subcate: 子类目，子类目、子类别，最少出现1次 最多出现1次，类型为字符串 -->
+				<source>小肥羊</source>
+				<!-- source: 资源方，来源方、资源方，最少出现1次 最多出现1次，类型为字符串 -->
+			</display>
+		</data>
+	</url>
+</urlset>

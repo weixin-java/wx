@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   
+    http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">  
+    <servlet>  
+        <servlet-name>API</servlet-name>  
+        <servlet-class>  
+            wx.iswfit.servlet.API
+        </servlet-class>  
+    </servlet>
+    <servlet>  
+        <servlet-name>selectAllGoods</servlet-name>  
+        <servlet-class>  
+            wx.iswfit.servlet.selectAllGoods
+        </servlet-class>  
+    </servlet>
+    <servlet>  
+        <servlet-name>newsMsg</servlet-name>  
+        <servlet-class>  
+            wx.iswfit.servlet.newsMsg
+        </servlet-class>  
+    </servlet>
+    <servlet>  
+        <servlet-name>DEFAULT</servlet-name>  
+        <servlet-class>  
+            wx.iswfit.servlet.DEFAULT
+        </servlet-class>  
+    </servlet>
+    
+    <!-- url-pattern中配置的/coreServlet用于指定该Servlet的访问路径 -->  
+    <servlet-mapping>  
+        <servlet-name>API</servlet-name>  
+        <url-pattern>/API</url-pattern>  
+    </servlet-mapping>
+    <servlet-mapping>  
+        <servlet-name>selectAllGoods</servlet-name>  
+        <url-pattern>/selectAllGoods</url-pattern>  
+    </servlet-mapping>
+    <servlet-mapping>  
+        <servlet-name>newsMsg</servlet-name>  
+        <url-pattern>/newsMsg</url-pattern>  
+    </servlet-mapping>
+    <servlet-mapping>  
+        <servlet-name>DEFAULT</servlet-name>  
+        <url-pattern>/DEFAULT</url-pattern>  
+    </servlet-mapping>
+    
+    
+    <!-- 添加过滤器 -->
+    <filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>wx.iswfit.filter.CharsetEncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+  
+  
+    <welcome-file-list>  
+        <welcome-file>index.jsp</welcome-file>  
+    </welcome-file-list>  
+</web-app>  
